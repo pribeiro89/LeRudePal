@@ -19,24 +19,31 @@
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="fill_parent"
-            android:weightSum="2">
+            android:weightSum="3">
 
-            <EditText
+            <TextView
+                android:text="TextView"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:inputType="textPersonName"
-                android:text="Text to translate"
-                android:ems="8"
-                android:id="@+id/editTextTextOptionInput"
-                android:layout_weight="1"
-                android:allowUndo="true"
-                android:cursorVisible="true" />
+                android:id="@+id/textView"
+                android:layout_weight="0.6"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textAlignment="center"
+                android:textSize="24sp" />
 
             <Button
-                android:text="Translate"
+                android:text="Pick language"
                 android:layout_width="match_parent"
-                android:layout_weight="1"
-                android:id="@+id/buttonTextOptionTranslate"
+                android:layout_height="0dp"
+                android:drawableRight="@android:drawable/arrow_down_float"
+                android:gravity="left|center_vertical"
+                android:layout_weight="1.2"/>
+
+            <Button
+                android:text="Go!"
+                android:layout_width="match_parent"
+                android:layout_weight="1.2"
+                android:id="@+id/buttonTranslationResultTranslate"
                 android:layout_height="0dp" />
 
         </LinearLayout>
