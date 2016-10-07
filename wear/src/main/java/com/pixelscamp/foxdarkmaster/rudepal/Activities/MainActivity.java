@@ -33,7 +33,7 @@ public class MainActivity extends BaseActivity implements DataTask.IConnectionLi
 
     private void getDataFromServer() {
         if (Utils.isNetworkAvailable(this)) {
-            task = new DataTask(this, DataTask.ACTIVITIES_GET, this);
+            task = new DataTask(this, DataTask.ASK_TRANSLATION, this);
             task.execute();
         }
     }

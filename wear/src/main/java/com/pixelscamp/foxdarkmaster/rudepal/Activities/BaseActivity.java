@@ -8,6 +8,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
+import com.pixelscamp.foxdarkmaster.rudepal.Managers.LocaleManager;
 import com.pixelscamp.foxdarkmaster.rudepal.R;
 
 /**
@@ -27,7 +28,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //LocaleManager.loadLocale(this);
+        LocaleManager.loadLocale(this);
         setContentView(getLayoutResource());
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);

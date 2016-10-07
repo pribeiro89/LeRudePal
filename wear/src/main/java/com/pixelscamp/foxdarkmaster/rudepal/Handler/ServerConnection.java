@@ -4,6 +4,9 @@ import android.app.DownloadManager;
 import android.content.Context;
 import android.util.Log;
 
+import com.pixelscamp.foxdarkmaster.rudepal.Managers.LocaleManager;
+import com.pixelscamp.foxdarkmaster.rudepal.Managers.SPManager;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 

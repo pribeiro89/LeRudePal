@@ -13,8 +13,11 @@ import org.json.JSONObject;
  */
 
 public class DataTask extends AsyncTask<Object, Void, JSONObject> {
-    private static final String TAG = "DataTask";
+    public static final int ASK_TRANSLATION = 00;
+    public static final int GET_TRANSLATION = 01;
+    public static final int ERROR_CONNECTING_TO_SERVER = 1000;
 
+    private static final String TAG = "DataTask";
 
 
     public interface IConnectionListener {
@@ -22,10 +25,6 @@ public class DataTask extends AsyncTask<Object, Void, JSONObject> {
         void onResult(JSONObject result);
         void onError(int code);
     }
-
-    public static final int ASK_TRANSLATION = 00;
-    public static final int GET_TRANSLATION = 01;
-    public static final int ERROR_CONNECTING_TO_SERVER = 1000;
 
     private static final String[] METHODS = new String[] {
             "POST",
