@@ -1,20 +1,22 @@
 package com.pixelscamp.foxdarkmaster.rudepal.Activities;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.wearable.view.WatchViewStub;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import android.widget.TextView;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
 
 import com.pixelscamp.foxdarkmaster.rudepal.Handler.DataTask;
 import com.pixelscamp.foxdarkmaster.rudepal.R;
 import com.pixelscamp.foxdarkmaster.rudepal.Utils.Utils;
 
-import org.json.JSONException;
 import org.json.JSONObject;
 
-public class MainActivity extends BaseActivity implements DataTask.IConnectionListener {
+public class MainActivity extends Activity implements DataTask.IConnectionListener {
 
     private AsyncTask task;
 
@@ -24,11 +26,27 @@ public class MainActivity extends BaseActivity implements DataTask.IConnectionLi
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-    }
+        setContentView(R.layout.round_activity_main);
 
-    @Override
-    protected int getLayoutResource() {
-        return R.layout.activity_main;
+        ImageButton bnt_speech = (ImageButton) this.findViewById(R.id.button_main_speak);
+        bnt_speech.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(), SpeechInputActivity.class);
+                startActivity(intent);
+            }
+
+        });
+
+        Button bnt_text = (Button) this.findViewById(R.id.button_main_text);
+        bnt_text.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(), TextInputActivity.class);
+            startActivity(intent);
+        }
+
+        });
     }
 
     private void getDataFromServer() {

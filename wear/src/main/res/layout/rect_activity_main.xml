@@ -31,7 +31,7 @@
                 android:scaleType="fitCenter" />
 
             <Button
-                android:text="Text"
+                android:text="Or write it!"
                 android:layout_width="match_parent"
                 android:layout_weight="1"
                 android:id="@+id/button_main_text"
