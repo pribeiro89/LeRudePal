@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.wearable.view.BoxInsetLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#fff"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black_54p"
+        android:padding="5dp"
+        app:layout_box="all">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:weightSum="2">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:text="Shit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text_translated_totranslate"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        />
+
+                    <TextView
+                        android:text="Mierda"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text_translated_translatedword"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:textSize="36dp"
+                        />
+                </LinearLayout>
+            </FrameLayout>
+
+            <Button
+                android:text="Go again!"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/button_translated_again"
+                android:layout_height="0dp" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</android.support.wearable.view.BoxInsetLayout>
+

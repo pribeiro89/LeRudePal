@@ -21,21 +21,24 @@
             android:layout_height="fill_parent"
             android:weightSum="2">
 
-            <ImageButton
+            <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 app:srcCompat="@drawable/mic_button"
-                android:id="@+id/button_main_speak"
+                android:id="@+id/image_countdown_speak"
                 android:layout_weight="1"
-                android:background="@drawable/action_item_background"
-                android:scaleType="fitCenter" />
+                android:scaleType="fitCenter"
+                android:tint="@color/circular_button_normal" />
 
-            <Button
-                android:text="Text"
+            <TextView
+                android:text="5"
                 android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/textview_countdown_count"
                 android:layout_weight="1"
-                android:id="@+id/button_main_text"
-                android:layout_height="0dp" />
+                android:textAlignment="center"
+                android:textSize="36dp"
+                android:paddingTop="15dp" />
 
         </LinearLayout>
 

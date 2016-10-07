@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <android.support.wearable.view.BoxInsetLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:background="#fff"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black_54p"
+            android:padding="5dp"
+            app:layout_box="all">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:weightSum="2">
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:srcCompat="@drawable/mic_button"
+                    android:id="@+id/button_main_speak"
+                    android:layout_weight="1"
+                    android:background="@drawable/action_item_background"
+                    android:scaleType="fitCenter" />
+
+                <Button
+                    android:text="Text"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/button_main_text"
+                    android:layout_height="0dp" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </android.support.wearable.view.BoxInsetLayout>
+
