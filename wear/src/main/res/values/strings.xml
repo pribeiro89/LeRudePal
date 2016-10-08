@@ -1,15 +1,15 @@
 <resources>
-    <string name="app_name">Rude Pal</string>
+    <string name="app_name">Le Rude Pal</string>
     <string name="hello_round">Hello Round World!</string>
     <string name="hello_square">Hello Square World!</string>
 
     <string-array name="languages_array">
-        <item>portuguese</item>
-        <item>Tennis</item>
-        <item>FootBall</item>
-        <item>Basket Ball</item>
-        <item>Table Tennis</item>
-        <item>Chess</item>
-        <item>Hockey</item>
+        <item>Portuguese</item>
+        <item>English</item>
+        <item>Spanish</item>
+        <item>Italian</item>
+        <item>French</item>
+        <item>Japanese</item>
+        <item>German</item>
     </string-array>
 </resources>
