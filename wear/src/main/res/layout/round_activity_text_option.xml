@@ -21,20 +21,24 @@
             android:layout_height="fill_parent"
             android:weightSum="2">
 
-            <ImageButton
+            <EditText
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                app:srcCompat="@drawable/mic_button"
-                android:id="@+id/button_main_speak"
+                android:ems="8"
+                android:id="@+id/editTextTextOptionInput"
                 android:layout_weight="1"
-                android:background="@drawable/action_item_background"
-                android:scaleType="fitCenter" />
+                android:allowUndo="true"
+                android:cursorVisible="true"
+                android:inputType="text"
+                android:hint="Type text to translate"
+                android:textAppearance="@style/TextAppearance.Wearable.Small"
+                android:textAlignment="center" />
 
             <Button
-                android:text="Or write it!"
+                android:text="Translate"
                 android:layout_width="match_parent"
                 android:layout_weight="1"
-                android:id="@+id/button_main_text"
+                android:id="@+id/buttonTextOptionTranslate"
                 android:layout_height="0dp" />
 
         </LinearLayout>
@@ -42,4 +46,3 @@
     </FrameLayout>
 
 </android.support.wearable.view.BoxInsetLayout>
-

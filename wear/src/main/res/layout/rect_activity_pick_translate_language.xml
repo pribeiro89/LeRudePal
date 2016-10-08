@@ -19,22 +19,32 @@
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="fill_parent"
-            android:weightSum="2">
+            android:weightSum="3">
 
-            <ImageButton
+            <TextView
+                android:text="TextView"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                app:srcCompat="@drawable/mic_button"
-                android:id="@+id/button_main_speak"
-                android:layout_weight="1"
-                android:background="@drawable/action_item_background"
-                android:scaleType="fitCenter" />
+                android:id="@+id/textViewPickTranslateLanguageWordToTranslate"
+                android:layout_weight="0.6"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textAlignment="center"
+                android:textSize="24sp" />
 
             <Button
-                android:text="Or write it!"
+                android:text="Pick language"
                 android:layout_width="match_parent"
-                android:layout_weight="1"
-                android:id="@+id/button_main_text"
+                android:layout_height="0dp"
+                android:id="@+id/buttonPickTranslateLanguageListView"
+                android:drawableRight="@android:drawable/arrow_down_float"
+                android:gravity="left|center_vertical"
+                android:layout_weight="1.2"/>
+
+            <Button
+                android:text="Go!"
+                android:layout_width="match_parent"
+                android:layout_weight="1.2"
+                android:id="@+id/buttonPickTranslateLanguageGo"
                 android:layout_height="0dp" />
 
         </LinearLayout>
@@ -42,4 +52,3 @@
     </FrameLayout>
 
 </android.support.wearable.view.BoxInsetLayout>
-

@@ -1,16 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.pixelscamp.foxdarkmaster.rudepal.MainActivity"
-    tools:deviceIds="wear_round">
 
-    <TextView
-        android:id="@+id/text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="@string/hello_round" />
-</RelativeLayout>
+    <android.support.wearable.view.BoxInsetLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:background="#fff"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black_54p"
+            android:padding="5dp"
+            app:layout_box="all">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:weightSum="2">
+
+                <android.support.v7.widget.AppCompatImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:srcCompat="@drawable/mic_button"
+                    android:id="@+id/button_main_speak"
+                    android:layout_weight="1"
+                    android:background="@drawable/action_item_background"
+                    android:scaleType="fitCenter" />
+
+                <Button
+                    android:text="Text"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/button_main_text"
+                    android:layout_height="0dp" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </android.support.wearable.view.BoxInsetLayout>
+

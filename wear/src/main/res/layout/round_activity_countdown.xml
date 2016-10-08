@@ -19,23 +19,34 @@
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="fill_parent"
-            android:weightSum="2">
+            android:weightSum="3">
 
-            <ImageButton
+            <android.support.v7.widget.AppCompatImageView
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 app:srcCompat="@drawable/mic_button"
-                android:id="@+id/button_main_speak"
-                android:layout_weight="1"
-                android:background="@drawable/action_item_background"
-                android:scaleType="fitCenter" />
+                android:id="@+id/image_countdown_speak"
+                android:layout_weight="1.5"
+                android:scaleType="fitCenter"
+                android:tint="@color/circular_button_normal" />
 
-            <Button
-                android:text="Or write it!"
+            <TextView
+                android:text="Start speaking!"
                 android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/textviewHelperText"
+                android:layout_weight="0.5"
+                android:textAlignment="center"
+                android:textSize="20dp" />
+
+            <TextView
+                android:text="5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/textview_countdown_count"
                 android:layout_weight="1"
-                android:id="@+id/button_main_text"
-                android:layout_height="0dp" />
+                android:textAlignment="center"
+                android:textSize="36dp" />
 
         </LinearLayout>
 

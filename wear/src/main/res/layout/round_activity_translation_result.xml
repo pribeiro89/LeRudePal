@@ -19,22 +19,29 @@
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="fill_parent"
-            android:weightSum="2">
+            android:weightSum="3">
 
-            <ImageButton
+            <TextView
+                android:text="TextView"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                app:srcCompat="@drawable/mic_button"
-                android:id="@+id/button_main_speak"
+                android:id="@+id/textView"
                 android:layout_weight="1"
-                android:background="@drawable/action_item_background"
-                android:scaleType="fitCenter" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textAlignment="center" />
 
             <Button
-                android:text="Or write it!"
+                android:text="Retry"
                 android:layout_width="match_parent"
                 android:layout_weight="1"
-                android:id="@+id/button_main_text"
+                android:id="@+id/buttonTranslationResultRetry"
+                android:layout_height="0dp" />
+
+            <Button
+                android:text="Translate"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/buttonTranslationResultTranslate"
                 android:layout_height="0dp" />
 
         </LinearLayout>
@@ -42,4 +49,3 @@
     </FrameLayout>
 
 </android.support.wearable.view.BoxInsetLayout>
-
