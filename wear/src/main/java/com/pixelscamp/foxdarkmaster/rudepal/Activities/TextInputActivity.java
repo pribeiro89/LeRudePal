@@ -17,7 +17,6 @@ public class TextInputActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.round_activity_text_option);
 
-
         final EditText to_translate = (EditText) findViewById(R.id.editTextTextOptionInput);
         Button bnt_translate = (Button) this.findViewById(R.id.buttonTextOptionTranslate);
         bnt_translate.setOnClickListener(new View.OnClickListener() {

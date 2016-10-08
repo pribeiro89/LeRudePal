@@ -14,20 +14,21 @@ import com.pixelscamp.foxdarkmaster.rudepal.R;
 public class LanguageListActivity extends Activity implements OnItemClickListener {
     ListView listView;
 
-        @Override
-        protected void onCreate (Bundle savedInstanceState){
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.round_activity_choose_language);
 
-            listView = (ListView) findViewById(R.id.list_choose_language);
-            listView.setOnItemClickListener(this);
-
-        }
+        listView = (ListView) findViewById(R.id.list_choose_language);
+        listView.setOnItemClickListener(this);
+    }
 
     @Override
     public void onItemClick(AdapterView<?> adapter, View view, int position, long id) {
+        Intent input_intent = getIntent();
         Intent intent = new Intent(view.getContext(), PickLanguageActivity.class);
         intent.putExtra("language", ((TextView) view).getText().toString());
+        intent.putExtra("to_translate", input_intent.getStringExtra("to_translate"));
         startActivity(intent);
     }
 
