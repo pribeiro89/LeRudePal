@@ -20,7 +20,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".Activities.TextInputActivity" />
-        <activity android:name=".Activities.SpeechInputActivity"></activity>
+        <activity android:name=".Activities.SpeechInputActivity" />
+        <activity android:name=".Activities.PickLanguageActivity" />
+        <activity android:name=".Activities.LanguagesListActivity"></activity>
     </application>
 
 </manifest>
