@@ -22,7 +22,9 @@
         <activity android:name=".Activities.TextInputActivity" />
         <activity android:name=".Activities.SpeechInputActivity" />
         <activity android:name=".Activities.PickLanguageActivity" />
-        <activity android:name=".Activities.LanguagesListActivity"></activity>
+        <activity android:name=".Activities.LanguagesListActivity" />
+        <activity android:name=".Activities.LanguageListActivity" />
+        <activity android:name=".Activities.TranslatedResultActivity"></activity>
     </application>
 
 </manifest>

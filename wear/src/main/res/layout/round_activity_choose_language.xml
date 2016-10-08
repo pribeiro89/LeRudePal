@@ -9,5 +9,6 @@
         android:id="@+id/list_choose_language"
         android:layout_width="match_parent"
         android:footerDividersEnabled="false"
-        android:keepScreenOn="true" />
+        android:keepScreenOn="true"
+        android:entries="@array/languages_array"/>
 </LinearLayout>
